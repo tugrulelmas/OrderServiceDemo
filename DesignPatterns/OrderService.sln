@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderService", "OrderService\OrderService.csproj", "{4FE26BAC-3213-475C-881A-0869D971E515}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4FE26BAC-3213-475C-881A-0869D971E515}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FE26BAC-3213-475C-881A-0869D971E515}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FE26BAC-3213-475C-881A-0869D971E515}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FE26BAC-3213-475C-881A-0869D971E515}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BC5917A2-88AE-46A7-8464-E5FCB813A3EE}
+	EndGlobalSection
+EndGlobal
