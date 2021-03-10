@@ -1,5 +1,4 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using System;
 using Order.Core;
 
 namespace Order.SlackConsumer {
@@ -7,7 +6,7 @@ namespace Order.SlackConsumer {
         static void Main(string[] args) {
             using (var services = RegisterServices()) {
                 services.UseAutoSubscriber();
-                Console.ReadLine();
+                while (true) { }
             }
         }
 

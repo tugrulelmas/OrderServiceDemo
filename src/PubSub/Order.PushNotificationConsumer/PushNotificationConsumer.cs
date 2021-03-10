@@ -1,6 +1,7 @@
 ﻿using EasyNetQ;
 using EasyNetQ.AutoSubscribe;
 using Order.Core;
+using System;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -14,6 +15,7 @@ namespace Order.SlackConsumer {
 
         [ForTopic("created.pushnotification")]
         public async Task ConsumeAsync(OrderCreated message, CancellationToken cancellationToken = default) {
+            Console.WriteLine(message.Content);
             await bus.PubSub.PublishAsync(new HistoryCreated { Text = $"Sent a push notification with content '{message.Content}' for order with id {message.Id}" });
         }
     }

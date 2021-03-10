@@ -21,7 +21,7 @@ namespace OrderService {
             services.AddSingleton<IHistoryService, HistoryService>();
             services.AddSingleton<IEmailService, EmailNotification>();
             services.AddSingleton<INotificationStrategy, EmailNotification>();
-            services.AddSingleton<INotificationStrategy>( p => new SmsNotificationEmailDecorator(new SmsNotification(p.GetRequiredService<IHistoryService>()), p.GetRequiredService<IEmailService>()));
+            services.AddSingleton<INotificationStrategy>(p => new SmsNotificationEmailDecorator(new SmsNotification(p.GetRequiredService<IHistoryService>()), p.GetRequiredService<IEmailService>()));
             services.AddSingleton<INotificationStrategy, PushNotification>();
             services.AddSingleton<INotificationFactory, NotificationFactory>();
             services.AddSingleton<IEventHandler<OrderCreated>, CreateEventHandler>();

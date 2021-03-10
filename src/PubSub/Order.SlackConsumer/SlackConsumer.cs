@@ -14,10 +14,10 @@ namespace Order.SlackConsumer {
         }
 
         public async Task ConsumeAsync(OrderCreated message, CancellationToken cancellationToken = default) {
-            await Task.Delay(5000);
+            Thread.Sleep(3000);
             var historyCreated = new HistoryCreated { Text = $"Sent a slack message with content '{message.Content}' for order with id {message.Id}" };
-            await bus.PubSub.PublishAsync<HistoryCreated>(historyCreated);
-            Console.WriteLine(historyCreated.Text);
+            await bus.PubSub.PublishAsync(historyCreated);
+            Console.WriteLine($"{DateTime.Now:HH:mm:ss} -- {historyCreated.Text}");
         }
     }
 }
