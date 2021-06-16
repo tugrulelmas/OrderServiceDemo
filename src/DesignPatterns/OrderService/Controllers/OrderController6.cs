@@ -6,10 +6,10 @@ using System.Collections.Generic;
 namespace OrderService.Controllers {
     [ApiController]
     [Route("[controller]")]
-    public class OrderController6 : ControllerBase {
+    public class Order6Controller : ControllerBase {
         private readonly IEnumerable<IEventHandler<OrderCreated>> eventHandlers;
 
-        public OrderController6(IEnumerable<IEventHandler<OrderCreated>> eventHandlers) {
+        public Order6Controller(IEnumerable<IEventHandler<OrderCreated>> eventHandlers) {
             this.eventHandlers = eventHandlers;
         }
 

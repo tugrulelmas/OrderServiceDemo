@@ -5,10 +5,10 @@ using System;
 namespace OrderService.Controllers {
     [ApiController]
     [Route("[controller]")]
-    public class OrderController3 : ControllerBase {
+    public class Order3Controller : ControllerBase {
         private readonly IHistoryService historyService;
 
-        public OrderController3(IHistoryService historyService) {
+        public Order3Controller(IHistoryService historyService) {
             this.historyService = historyService;
         }
 

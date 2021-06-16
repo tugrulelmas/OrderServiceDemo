@@ -5,11 +5,11 @@ using OrderService.Strategies;
 namespace OrderService.Controllers {
     [ApiController]
     [Route("[controller]")]
-    public class OrderController5 : ControllerBase {
+    public class Order5Controller : ControllerBase {
         private readonly IHistoryService historyService;
         private readonly INotificationFactory notificationFactory;
 
-        public OrderController5(IHistoryService historyService, INotificationFactory notificationFactory) {
+        public Order5Controller(IHistoryService historyService, INotificationFactory notificationFactory) {
             this.historyService = historyService;
             this.notificationFactory = notificationFactory;
         }
